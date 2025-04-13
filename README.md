@@ -11,7 +11,6 @@ ng g m app --routing
 *** use forRoot() is used once — in your root module (AppRoutingModule) — to set up the global router configuration.***
 
 
-
 --update main ts
 --main.ts
 platformBrowserDynamic()
@@ -20,7 +19,6 @@ platformBrowserDynamic()
 
 --update app-module.ts
 *** import BrowserModule ***
-
 
  cd app  
  ng g m login --routing
