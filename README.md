@@ -26,4 +26,3 @@ platformBrowserDynamic()
  --login-module-> login-routing-> login-component     
 
 --login-module-> app-routing  
-
