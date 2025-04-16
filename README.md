@@ -36,5 +36,6 @@ platformBrowserDynamic()
 
  add all component in layout component and route for layout component only
  add layout module in app.routing.module
+ 
 
 
