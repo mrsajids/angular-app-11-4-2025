@@ -2,27 +2,27 @@
 ## Angular Modular Project
 this is my practice and reference site
 
-ng new angular-app
+ng new angular-app <br>
 ng s -o
  
 --create module with routing <br>
---app-module-> app-routing-> app-component
-ng g m app --routing
+--app-module-> app-routing-> app-component <br>
+ng g m app --routing <br>
 *** use forRoot() is used once — in your root module (AppRoutingModule) — to set up the global router configuration.***
 
 
---update main ts 
---main.ts
+--update main ts <br>
+--main.ts <br>
 platformBrowserDynamic()
   .bootstrapModule(AppModule)
   .catch((err) => {});
 
---update app-module.ts
-*** import BrowserModule ***
+--update app-module.ts <br>
+*** import BrowserModule *** <br>
 
- cd app  
- ng g m login --routing
- ng g c login/login --routing 
- --login-module-> login-routing-> login-component     
+ cd app  <br>
+ ng g m login --routing <br>
+ ng g c login/login --routing <br>
+ --login-module-> login-routing-> login-component <br>    
 
---login-module-> app-routing  
+--login-module-> app-routing <br> 
