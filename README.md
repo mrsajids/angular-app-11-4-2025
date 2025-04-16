@@ -1,11 +1,11 @@
 # angular-app-11-4-2025
-# Angular Modular Project
+## Angular Modular Project
 this is my practice and reference site
 
 ng new angular-app
 ng s -o
  
---create module with routing
+--create module with routing <br>
 --app-module-> app-routing-> app-component
 ng g m app --routing
 *** use forRoot() is used once — in your root module (AppRoutingModule) — to set up the global router configuration.***
