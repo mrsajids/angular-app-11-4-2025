@@ -4,7 +4,7 @@ this is my practice and reference site
 
 ng new angular-app
 ng s -o
-
+ 
 --create module with routing
 --app-module-> app-routing-> app-component
 ng g m app --routing
