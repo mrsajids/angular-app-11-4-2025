@@ -4,7 +4,13 @@ import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [{
   path: '',
-  component: LayoutComponent
+  component: LayoutComponent,
+  // children: [
+  //   {
+  //     path: '',
+  //     component: LayoutComponent
+  //   }
+  // ]
 }];
 
 @NgModule({
