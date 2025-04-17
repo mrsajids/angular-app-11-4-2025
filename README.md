@@ -46,3 +46,8 @@ platformBrowserDynamic()
 and keep the files in assets in src
 
 
+ng g m dashboard --routing
+cd dashboard
+
+
+
