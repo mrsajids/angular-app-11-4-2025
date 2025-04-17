@@ -48,6 +48,9 @@ and keep the files in assets in src
 
 ng g m dashboard --routing
 cd dashboard
+ng g c dashbaord
+add dashboard compo in dashbaord module and import module in layout module
+
 
 
 
