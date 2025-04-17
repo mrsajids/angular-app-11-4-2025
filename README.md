@@ -37,5 +37,12 @@ platformBrowserDynamic()
  add all component in layout component and route for layout component only
  add layout module in app.routing.module
  
+ # importing images
+ while import set angular json to 
+          "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+and keep the files in assets in src
 
 
