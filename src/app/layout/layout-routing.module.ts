@@ -5,12 +5,12 @@ import { LayoutComponent } from './layout/layout.component';
 const routes: Routes = [{
   path: '',
   component: LayoutComponent,
-  // children: [
-  //   {
-  //     path: '',
-  //     component: LayoutComponent
-  //   }
-  // ]
+  children: [
+    {
+      path: '',
+      loadChildren: () => import('../dashboard/dashboard.module').then(m => m.DashboardModule)
+    }
+  ]
 }];
 
 @NgModule({
