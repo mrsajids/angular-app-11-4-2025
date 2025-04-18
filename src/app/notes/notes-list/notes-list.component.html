@@ -1,1 +1,20 @@
-<p>notes-list works!</p>
+<div class="notes-list container my-3 position-relative" style="min-height: 80vh;">
+    <h2>Notes List</h2>
+    <div class="card">
+        <div class="card-body">
+            <div class="d-flex justify-content-between">
+                <div class="">
+                    <p routerLink="/notes/{{ 1 }}">{{ 'Title' }}</p>
+                </div>
+                <div class="">
+                    <button class="btn btn-sm btn-outline-info border-0 rounded-pill"><i class="fa fa-pen"></i></button>
+                    <button class="btn btn-sm btn-outline-danger border-0 rounded-pill"><i
+                            class="fa fa-trash"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <button class="btn rounded-pill btn-primary fs-2 px-3 py-0 position-absolute bottom-0 end-0 pb-1">+</button>
+</div>
