@@ -37,7 +37,7 @@ platformBrowserDynamic()
  add all component in layout component and route for layout component only
  add layout module in app.routing.module
  
- # importing images
+ ## importing images
  while import set angular json to 
           "assets": [
               "src/favicon.ico",
@@ -50,6 +50,16 @@ ng g m dashboard --routing
 cd dashboard
 ng g c dashbaord
 add dashboard compo in dashbaord module and import module in layout module
+
+## print ngModel for Error validatio checking 
+//html 
+  <input type="text" name="title" #titleCtrl="ngModel"  
+  // In your component .ts file
+  @ViewChild('titleCtrl') titleCtrlRef: NgModel;  
+  ngAfterViewInit() {
+    console.log('Control:', this.titleCtrlRef);
+  }  
+
 
 
 
