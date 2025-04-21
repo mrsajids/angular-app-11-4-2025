@@ -53,8 +53,8 @@ add dashboard compo in dashbaord module and import module in layout module
 
 ## print ngModel for Error validatio checking 
 //html 
-  <input type="text" name="title" #titleCtrl="ngModel"
-// In your component .ts file
+  <input type="text" name="title" #titleCtrl="ngModel"  
+  // In your component .ts file
   @ViewChild('titleCtrl') titleCtrlRef: NgModel;
   ngAfterViewInit() {
     console.log('Control:', this.titleCtrlRef);
