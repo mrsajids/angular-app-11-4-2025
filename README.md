@@ -55,7 +55,7 @@ add dashboard compo in dashbaord module and import module in layout module
 //html 
   <input type="text" name="title" #titleCtrl="ngModel"  
   // In your component .ts file
-  @ViewChild('titleCtrl') titleCtrlRef: NgModel;
+  @ViewChild('titleCtrl') titleCtrlRef: NgModel;  
   ngAfterViewInit() {
     console.log('Control:', this.titleCtrlRef);
   }  
