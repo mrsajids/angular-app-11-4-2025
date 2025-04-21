@@ -5,12 +5,14 @@ import { NotesRoutingModule } from './notes-routing.module';
 import { NotesListComponent } from './notes-list/notes-list.component';
 import { NoteItemComponent } from './note-item/note-item.component';
 import { NoteFormComponent } from './note-form/note-form.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [NotesListComponent, NoteItemComponent, NoteFormComponent],
   imports: [
     CommonModule,
+    FormsModule,
     NotesRoutingModule
   ]
 })

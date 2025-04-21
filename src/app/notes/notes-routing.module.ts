@@ -10,12 +10,12 @@ const routes: Routes = [
     component: NotesListComponent,
   },
   {
-    path: ':id',
-    component: NoteItemComponent,
-  },
-  {
     path: 'new',
     component: NoteFormComponent,
+  },
+  {
+    path: ':id',
+    component: NoteItemComponent,
   },
 ];
 
@@ -23,4 +23,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class NotesRoutingModule {}
+export class NotesRoutingModule { }

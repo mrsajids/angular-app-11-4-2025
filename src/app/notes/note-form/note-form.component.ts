@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrl: './note-form.component.scss'
 })
 export class NoteFormComponent {
+  note: any = {
+    title: '',
+    description: ''
+  };
+
+  onSubmit(data: any): void {
+  alert(JSON.stringify(data.value));
+  console.log(this.note);
+  
+
+  }
 
 }

@@ -1,1 +1,30 @@
-<p>note-form works!</p>
+<div class="notes-list container my-3 position-relative" style="min-height: 80vh;">
+    <h2>Notes List</h2>
+    <div class="card">
+        <div class="card-body p-4">
+            <form #noteForm="ngForm" (ngSubmit)="onSubmit(noteForm)" class="mb-3">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Title</label>
+                    <input type="text" name="title" #titleCtrl="ngModel" [(ngModel)]="note.title"  class="form-control"
+                        id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                        <div class="text-danger"></div>
+
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Description</label>
+                    <textarea class="form-control" name="description" [(ngModel)]="note.description"
+                        id="exampleInputPassword1" rows="2"></textarea>
+                </div>
+                <pre>{{ titleCtrl | json }}</pre>
+                <!-- <div *ngIf="titleCtrl.invalid && titleCtrl.touched" class="text-danger">
+                    Title is required.
+                </div> -->
+
+                <button type="submit" class="btn btn-primary float-end">Submit</button>
+            </form>
+
+        </div>
+    </div>
+
+    <button class="btn rounded-pill btn-primary fs-2 px-3 py-0 position-absolute bottom-0 end-0 pb-1">+</button>
+</div>
