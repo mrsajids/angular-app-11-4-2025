@@ -9,7 +9,6 @@ export class LocalserviceService {
 
   setNotes(item: any) {
     const arr = this.getAllNotes();
-    // let arr = [];
     arr.push(item);
     localStorage.setItem('notes', JSON.stringify(arr));
   }
@@ -23,6 +22,11 @@ export class LocalserviceService {
   getAllNotes() {
     let list = JSON.parse(localStorage.getItem('notes') || '[]');
     return list;
+  }
+
+  removeNotes(id: string) {
+    let result = this.getAllNotes().filter((item: any) => item.id !== id);
+    localStorage.setItem("notes", JSON.stringify(result))
   }
 
 }
