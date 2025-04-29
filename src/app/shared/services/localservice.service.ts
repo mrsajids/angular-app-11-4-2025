@@ -7,7 +7,6 @@ export class LocalserviceService {
 
   constructor() { }
 
-  
   setNotes(item: any) {
     const arr = this.getAllNotes();
     // let arr = [];
