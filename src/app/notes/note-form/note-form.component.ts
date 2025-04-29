@@ -1,4 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
+import { LocalserviceService } from '../../shared/services/localservice.service';
 
 @Component({
   selector: 'app-note-form',
@@ -11,27 +13,16 @@ export class NoteFormComponent {
     description: ''
   };
 
-  setNotes(item: any) {
-    const arr = this.getAllNotes();
-    arr.push(item);
-    localStorage.setItem('notes', arr);
-  }
+  constructor(private router: Router, private localService: LocalserviceService) {
 
-  getNote(id: string) {
-    const list = JSON.parse(localStorage.getItem('notes') || '[]');
-    const note = list.find((item: any) => item.id === id);
-    return note;
-  }
-
-  getAllNotes() {
-    let list = JSON.parse(localStorage.getItem('notes') || '[]');
-    return list;
   }
 
   onSubmit(data: any): void {
-    alert(JSON.stringify(data.value));
-    this.setNotes(data.value);
-    console.log(this.getAllNotes());
+    console.log(data.value)
+    const id = new Date().getTime();
+    this.localService.setNotes({ id: id, ...data.value });
+    console.log(this.localService.getAllNotes());
+    this.router.navigate(['/notes']);
   }
 
 }
