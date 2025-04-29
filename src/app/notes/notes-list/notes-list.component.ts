@@ -26,7 +26,7 @@ export class NotesListComponent implements OnInit {
 
   removeNotes(id: string) {
     this.localService.removeNotes(id);
-    this.localService.getAllNotes();
+    this.notes = this.localService.getAllNotes();
   }
 
 

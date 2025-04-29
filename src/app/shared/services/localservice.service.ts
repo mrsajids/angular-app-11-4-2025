@@ -24,6 +24,19 @@ export class LocalserviceService {
     return list;
   }
 
+  updateNotes(id: string, data: any) {
+    let notes = this.getAllNotes(); // Get all notes from localStorage
+    const index = notes.findIndex((item: any) => item.id === id);
+    if (index !== -1) {
+      notes[index].title = data.title;         // Fixed typo: "titile" ➝ "title"
+      notes[index].description = data.description;
+      notes[index].id = id;
+    }
+  
+    localStorage.setItem("notes", JSON.stringify(notes)); // Save full list back
+  }
+  
+
   removeNotes(id: string) {
     let result = this.getAllNotes().filter((item: any) => item.id !== id);
     localStorage.setItem("notes", JSON.stringify(result))
