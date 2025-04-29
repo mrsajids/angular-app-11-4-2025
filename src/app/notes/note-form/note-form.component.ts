@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, Input, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { LocalserviceService } from '../../shared/services/localservice.service';
 
@@ -12,9 +12,12 @@ export class NoteFormComponent {
     title: '',
     description: ''
   };
+  @Input() receivedData: string | undefined;
 
   constructor(private router: Router, private localService: LocalserviceService) {
-
+    const nav = this.router.getCurrentNavigation();
+    console.log(nav?.extras?.state?.['id'] || '');
+    
   }
 
   onSubmit(data: any): void {
