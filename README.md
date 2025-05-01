@@ -48,17 +48,17 @@ and keep the files in assets in src
 
 ng g m dashboard --routing
 cd dashboard
-ng g c dashbaord
-add dashboard compo in dashbaord module and import module in layout module
+ng g c dashbaord  
+add dashboard compo in dashbaord module and import module in layout module  
 
 ## print ngModel for Error validatio checking 
-//html 
+//html   
   <input type="text" name="title" #titleCtrl="ngModel"  
-  // In your component .ts file
-  @ViewChild('titleCtrl') titleCtrlRef: NgModel;  
-  ngAfterViewInit() {
-    console.log('Control:', this.titleCtrlRef);
-  }  
+  // In your component .ts file  
+  @ViewChild('titleCtrl') titleCtrlRef: NgModel;    
+  ngAfterViewInit() {  
+    console.log('Control:', this.titleCtrlRef);  
+  }    
 
 
 
