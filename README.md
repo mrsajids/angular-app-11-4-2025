@@ -22,7 +22,10 @@ platformBrowserDynamic()
 *** import BrowserModule *** <br>
 imports: [
     BrowserModule, //**** must be added manually..  
-    
+and 
+  bootstrap: [AppModule]
+
+  
  cd app  <br>
  ng g m login --routing <br>
  ng g c login/login --routing <br>
