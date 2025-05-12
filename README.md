@@ -13,13 +13,16 @@ ng g m app --routing <br>
 
 --update main ts <br>
 --main.ts <br>
+```
 platformBrowserDynamic()
   .bootstrapModule(AppModule)
   .catch((err) => {});
-
+```
 --update app-module.ts <br>
 *** import BrowserModule *** <br>
-
+imports: [
+    BrowserModule, //**** must be added manually..  
+    
  cd app  <br>
  ng g m login --routing <br>
  ng g c login/login --routing <br>
