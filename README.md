@@ -11,9 +11,10 @@ ng s -o
 ```
 ng g m app --routing 
 ```
-*** use forRoot() is used once — in your root module (AppRoutingModule) — to set up the global router configuration.***
+*** use forRoot() is used once — in your root module 
+--AppRoutingModule.ts — to set up the global router configuration.***
 ```
-forRoot()
+imports: [RouterModule.forRoot(routes)]
 ```
 
 --update main ts <br>
