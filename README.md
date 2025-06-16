@@ -1,6 +1,6 @@
 # angular-app-11-4-2025
 ## Angular Modular Project
-this is my practice and reference site
+Angular 18 create components as standalone. In order to use modules based architecture we will follow these steps to create module based components.
 ```
 ng new angular-app 
 ng s -o
