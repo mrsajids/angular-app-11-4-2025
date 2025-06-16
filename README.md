@@ -8,9 +8,10 @@ ng s -o
  
 --create module with routing <br>
 --app-module-> app-routing-> app-component <br>
-ng g m app --routing <br>
+```
+ng g m app --routing 
+```
 *** use forRoot() is used once — in your root module (AppRoutingModule) — to set up the global router configuration.***
-
 
 --update main ts <br>
 --main.ts <br>
@@ -20,12 +21,15 @@ platformBrowserDynamic()
   .catch((err) => {});
 ```
 --update app-module.ts <br>
-*** import BrowserModule *** <br>
+```
+*** import BrowserModule *** 
 imports: [
-    BrowserModule, //**** must be added manually..  
+    BrowserModule, //**** must be added  manually..  
+```
 and 
+```
   bootstrap: [AppModule]
-
+```
   
  cd app  <br>
  ng g m login --routing <br>
